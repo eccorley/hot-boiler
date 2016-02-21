@@ -30,7 +30,7 @@ module.exports = {
         loader: 'babel',
         query: {
           cacheDirectory: true,
-          presets: ['es2015']
+          presets: ['es2015', 'stage-0']
         },
       },
       { test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader?sourceMap', include: path.join(__dirname, 'src/sass')},
